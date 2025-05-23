@@ -1,7 +1,26 @@
 html {
     scroll-behavior: smooth;
 }
-
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 550px) {
+    html {
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width: 475px) {
+    html {
+        font-size: 0.5rem;
+    }
+}
+@media only screen and (max-width: 350px) {
+    html {
+        font-size: 0.4rem;
+    }
+}
 body {
     background-color: #111;
     color: #DDD;
@@ -53,7 +72,9 @@ header {
     font-weight: bold;
     margin: 4rem 5rem;
 }
-
+.header-content p {
+    font-size: 2rem;
+}
 @keyframes blink {
     0% {
         opacity: 0;
@@ -74,8 +95,7 @@ header {
 }
 
 .button {
-    position: absolute;
-    top: 70dvh;
+    margin: 4rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,14 +120,32 @@ header {
 .section-text {
     margin: 4rem auto;
     font-size: 1.4rem;
+    min-width: 30rem;
     width: 50%;
+    line-height: 2em;
 }
 
 #stack {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem auto;
 }
 
 #stack i {
-    margin: 0 2rem;
+    margin: 2rem 2rem;
+}
+
+.projects li {
+    text-align: justify;
+    margin: 2rem auto;
+}
+
+.projects h3 {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.projects p {
+    display: none
 }
