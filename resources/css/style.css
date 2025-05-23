@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111;
+    color: #DDD;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+header {
+    height: 100dvh;
+    background-repeat: no-repeat;
+    background-image: url("../media/background.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+header h1 {
+    font-size: 5rem;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: bold;
+    margin: 4rem 5rem;
+}
+nav {
+    position: absolute;
+    top: 3dvh;
+    height: 20%;
+}
+.menu {
+    height: 100%
+}
+.menu li {
+    height: 100%;
+    margin: 1.5rem 5rem;
+    display: inline-block;
+    transition: scale 0.1s ease-out;
+}
+.menu a {
+    display: inline-block;
+}
+.menu li:hover {
+    scale: 1.2;
+}
