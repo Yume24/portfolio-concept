@@ -7,6 +7,7 @@ body {
     color: #DDD;
     font-family: "Quicksand", sans-serif;
     font-size: 1.5rem;
+    text-align: center;
 }
 a {
     color: inherit;
@@ -97,8 +98,16 @@ header {
 }
 
 .section-text {
-    margin: 4rem;
+    margin: 4rem auto;
     font-size: 1.4rem;
     width: 50%;
-    text-align: justify;
+}
+
+#stack {
+    display: flex;
+    justify-content: center;
+}
+
+#stack i {
+    margin: 0 2rem;
 }
