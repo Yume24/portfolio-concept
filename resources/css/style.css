@@ -149,3 +149,11 @@ header {
 .projects p {
     display: none
 }
+
+footer {
+    margin: 1rem auto;
+    font-size: 1rem;
+    min-width: 30rem;
+    width: 50%;
+    line-height: 2em;
+}
